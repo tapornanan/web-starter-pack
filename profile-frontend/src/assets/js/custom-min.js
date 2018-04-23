@@ -1,0 +1,1 @@
+function onToggleCustomerMenu(){$("#customer-menu").hasClass("close")?$("#customer-menu").removeClass("close"):$("#customer-menu").addClass("close")}

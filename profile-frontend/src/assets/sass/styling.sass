@@ -1,0 +1,631 @@
+@import 'global.sass'
+
+html
+  font-family: $font-main
+
+.form-group
+    margin-bottom: 1.9rem
+
+.progress
+  margin-bottom: 8px
+
+.no-padding
+  padding: 0 !important
+
+.is-green
+  color: $green
+
+.is-red
+  color: $red
+
+.close
+  display: none
+
+label
+    font-family: $font-main
+    font-weight: 400
+    font-size: 14px
+
+.input-group-text
+  background: $light-grey
+  border-radius: 30px 0 0 30px
+  border: none
+  padding-left: 20px
+
+
+.form-control
+    color: $black
+    font-family: $font-main
+    font-size: 14px
+    background: $light-grey
+    -webkit-appearance: none
+    border-radius: 0
+    border-radius: 50px
+    border: none
+    height: 50px
+    padding-left: 30px
+    border: 2px solid $light-grey !important
+
+    &:focus, &:active
+        border: none !important
+        outline: none !important
+        box-shadow: none !important
+        border: 2px solid $light-grey !important
+        outline: none !important
+
+    &::placeholder
+        color: $grey
+
+    &:disabled
+      background: $light-grey
+      color: $grey
+      // padding: 8px
+      margin-bottom: 10px
+
+.btn
+    font-family: $font-main
+    padding: 10px 26px
+    border-radius: 50px
+    font-weight: 300
+    font-size: 14px
+    height: 40px
+    margin: 0 0 20px 0
+    line-height: 14px
+
+    .icon
+      margin-right: 10px
+      font-size: 16px
+
+.btn-success
+    background: $primary
+    border: none
+    color: $black
+    box-shadow: 0px 2px 8px lighten($primary, 10%)
+
+    &:hover
+        background: darken($primary, 10%)
+
+    &:focus
+        box-shadow: 0px 2px 16px lighten($primary, 10%)
+
+    &:active
+        background-color: darken($primary, 10%) !important
+        border: none !important
+        box-shadow: 0px 2px 16px lighten($primary, 10%) !important
+
+.btn-default
+  background: white
+  border: none
+  color: $black
+  box-shadow: 0px 2px 8px $shadow
+
+  &:hover
+      background: darken($white, 10%)
+
+  &:focus
+      box-shadow: 0px 2px 16px lighten($white, 10%)
+
+  &:active
+      background-color: darken($white, 10%) !important
+      border: none !important
+      box-shadow: 0px 2px 16px lighten($white, 10%) !important
+
+.btn-facebook
+  background: $facebook
+  border: none
+  color: $white
+  box-shadow: 0px 2px 8px lighten($facebook, 10%)
+  height: 50px
+  letter-spacing: .5px
+
+  &:hover
+        background: darken($facebook, 10%)
+
+  &:focus
+      box-shadow: 0px 2px 16px lighten($facebook, 10%)
+
+  &:active
+      background-color: darken($facebook, 10%) !important
+      border: none !important
+      box-shadow: 0px 2px 16px lighten($facebook, 10%) !important
+
+.text-grey
+  color: $grey
+
+.text-center
+  text-align: center
+
+.no-margin
+  margin: 0
+
+.full-width
+  width: 100%
+
+.sub-text
+  font-size: 14px
+  font-weight: 300
+  letter-spacing: .3px
+
+.badge
+  height: 30px
+  padding: 8px 12px
+
+.badge-primary
+  background: $white
+  box-shadow: 0px 0px 50px $shadow
+  color: $black
+
+
+.login-wrapper
+  position: relative
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-size: cover
+  width: 100vw
+  height: 100vh
+
+  .login-card
+    max-width: 420px !important
+    width: 100%
+    box-shadow: 0px 0px 0px $shadow
+
+
+.link
+  color: $blue
+  text-decoration: none
+  font-size: 14px
+  margin-bottom: 20px
+
+.card
+  padding: 10px
+  margin: 20px
+  border: none
+  border-radius: 30px
+  // min-width: 420px
+  background: $white
+  box-shadow: 0px 0px 50px $shadow
+  position: relative
+  overflow: hidden
+
+  .card-header
+    background: $white
+    border: none
+    position: relative
+    width: 100%
+    padding: 40px 20px 0 20px
+
+    .logo
+      width: 180px
+      margin: 10px auto
+      display: flex
+
+  .card-content
+    padding: 20px
+
+
+  .card-footer
+    background: $white
+    border: none
+    position: relative
+    width: 100%
+    border-top: 1px solid $light-grey
+    margin-top: 20px
+
+.nav-wrapper
+  height: 400px
+  background: $white
+  padding-top: 30px
+  background-size: cover
+  .navbar-nav
+    list-style: none
+    .customer-img-wrap
+      width: 50px
+      height: 50px
+      overflow: hidden
+      border-radius: 50%
+      box-shadow: 0px 2px 8px $shadow
+      background: $white
+      position: relative
+
+
+
+.customer-nav
+  list-style: none
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+  .customer-img-wrap
+    // background: $white
+    position: relative
+    padding: 0
+    margin: 20px auto 5px auto
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    .customer-option-wrapper
+      position: absolute
+      left: 0
+      top: 60px
+      width: 100%
+
+      ul
+        position: relative
+        font-family: $font-main
+        background-color: $white
+        box-shadow: 0px 2px 8px $shadow
+        display: flex
+        flex-direction: column
+        list-style: none
+        border-radius: 6px
+        padding: 0
+        overflow: hidden
+
+        li
+          text-align: left
+          padding: 6px 20px
+          color: $black
+          transition: 0.2s
+
+          &:hover
+            background: $primary
+            color: $white
+
+          &.divider
+            border-top: 1px solid $light-grey
+            padding: 0
+
+          a
+            text-decoration: none
+            font-size: 14px
+            color: inherit
+
+
+
+    img
+      width: 50px
+      height: 50px
+      overflow: hidden
+      box-shadow: 0px 2px 8px $shadow
+      border-radius: 50%
+      margin-right: 20px
+      cursor: pointer
+
+    .customer-name
+      font-size: 12px
+      float: left
+      cursor: pointer
+
+.customer-card
+  max-width: 800px
+  margin: 0 auto 40px
+  box-shadow: 0px 0px 50px $shadow
+  background: $white
+  border-radius: 20px
+  position: relative
+
+  .card-header
+    background: $white
+    border: none
+    padding: 40px 60px 20px
+
+    .customer-point-wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      font-size: 14px
+      margin-bottom: 10px
+
+
+    .customer-img-wrapper
+      width: 150px
+      height: 150px
+      overflow: hidden
+      border-radius: 50%
+      box-shadow: 0px 2px 8px $shadow
+      background: $white
+      margin-bottom: 20px
+
+    .customer-name
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-weight: 500
+
+  .card-footer
+    background: $white
+    border: none
+    padding: 30px
+    border-top: 1px solid $light-grey
+
+
+    .customer-navigation
+      list-style: none
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin: 0
+
+      li
+        float: left
+        border-radius: 30px
+        background: $white
+        box-shadow: 0px 2px 8px $shadow
+        padding: 14px 30px
+        width: 190px
+        text-align: center
+        transition: all 0.3s ease-in-out
+
+        a
+          color: $black
+          text-decoration: none
+
+
+        &.active, &:hover
+          background: $primary
+          box-shadow: 0px 2px 16px lighten($primary, 10%) !important
+
+.reward-wrapper
+  background: $white
+  box-shadow: 0px 2px 8px $shadow
+  padding: 10px 10px 0 10px
+  border-radius: 20px
+  position: relative
+  margin: 0 auto 20px auto
+  width: 95%
+
+  .reward-popup-wrapper
+    position: fixed
+    z-index: 9999
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    font-family: $font-main
+
+    .reward-popup-overlay
+      background: rgba(0, 0, 0, 0.3)
+      position: fixed
+      z-index: 9998
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+
+    .reward-popup
+      margin: 10% auto
+      position: relative
+      min-width: 500px
+      max-width: 800px
+      // margin-left:
+      min-height: 350px
+      background: $white
+      z-index: 9999
+      border-radius: 12px
+      padding: 20px 0
+      box-shadow: 0px 0px 50px $shadow
+
+    .reward-popup-content
+      padding: 10px 20px
+      overflow-y: scroll
+
+      .reward-popup-img-wrapper
+        max-width: 500px
+
+        .reward-popup-img
+          width: 100%
+
+
+    .reward-popup-header
+      padding: 20px 40px
+
+
+      .reward-popup-close
+        position: absolute
+        cursor: pointer
+        right: 20px
+        top: 20px
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: 0.3s
+
+        &:hover
+          box-shadow: 0px 2px 8px $shadow
+
+  .term
+    position: absolute
+    left: 20px
+    top: 20px
+    color: $blue
+    z-index: 99
+    cursor: pointer
+
+    i
+      cursor: pointer
+
+  .point-used
+    position: absolute
+    z-index: 99
+    top: 10px
+    right: 10px
+    background: $almost-red
+    color: $white
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    text-transform: uppercase
+    font-size: 9px
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    box-shadow: 0px 2px 8px $almost-red
+
+
+    .point
+      font-size: 18px
+      font-weight: 500
+      margin-bottom: -6px
+
+
+
+  .reward-img-wrapper
+    width: 100%
+    margin-bottom: 20px
+    position: relative
+    z-index: 1
+
+    img
+      width: 100%
+
+.nav-pills
+  .nav-item
+    color: $black
+    box-shadow: 0px 0px 50px $shadow
+    border-radius: 30px
+
+
+    .first
+      border-radius: 30px 0 0 30px
+      background: $white
+      color: $black
+      height: 50px
+      line-height: 34px
+
+      &.active
+        background: $primary
+        box-shadow: 0px 2px 16px lighten($primary, 10%) !important
+        color: $black
+
+
+    .last
+      border-radius: 0 30px 30px 0
+      background: $white
+      color: $black
+      height: 50px
+      line-height: 34px
+      &.active
+        background: $primary
+        box-shadow: 0px 2px 16px lighten($primary, 10%) !important
+        color: $black
+
+
+.table-redeem-history
+  background: $white
+  border-radius: 12px
+  box-shadow: 0px 0px 50px $shadow
+
+  thead
+    th
+      border: none
+      font-weight: 300
+      font-size: 14px
+
+  tbody
+    tr
+      td
+        border-top: 1px solid $light-grey
+
+        .reward-list-img-wrapper
+          width: 120px
+
+          img
+            width: 100%
+
+.nav-pills-profile
+  .nav-link
+    color: $black
+    border-radius: 12px
+    padding: 14px 20px
+
+    &.active
+      background: $primary
+      color: $black
+      box-shadow: 0px 2px 16px lighten($primary, 10%) !important
+
+.profile-card
+  padding: 20px
+  background: $white
+  box-shadow: 0px 2px 8px $shadow
+  border-radius: 12px
+  margin-bottom: 20px
+
+.custom-select
+  background-color: $light-grey
+  border-radius: 30px
+  height: 50px
+  border: none
+  padding-left: 30px
+  font-size: 14px
+  color: $black
+  font-family: $font-main
+  margin-bottom: 20px
+
+.member-card
+  padding: 20px
+  margin: 20px auto
+  max-width: 400px
+  width: 100%
+  max-height: 230px
+  min-height: 220px
+  height: 100%
+  position: relative
+  background: $primary
+  border-radius: 12px
+  box-shadow: 0px 2px 8px $shadow
+  font-family: $font-main
+  background-size: cover
+  background-repeat: no-repeat
+
+  .member-number
+    position: absolute
+    bottom: 30px
+    right: 20px
+    letter-spacing: 1px
+    color: $black
+    font-size: 1.4rem
+
+  .member-level
+    font-family: $font-main
+    text-transform: uppercase
+    letter-spacing: 1px
+    font-size: 14px
+    color: $grey
+    font-weight: 300
+
+@media only screen and (max-width: 767px)
+  .customer-card
+    margin: 0 10px 20px
+
+    .card-header
+      text-align: center
+
+      .customer-img-wrapper
+        margin: 20px auto !important
+
+    .card-footer
+      padding: 20px
+      .customer-navigation
+        padding: 0
+        flex-direction: column
+
+        li
+          margin-bottom: 10px
+
+  .table-redeem-history
+    tbody
+      tr
+        td
+          .reward-list-img-wrapper
+            max-width: 100px
+            width: 100%
